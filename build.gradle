@@ -56,3 +56,9 @@ allure {
         version = "${allureVersion}"
     }
 }
+
+task iphone_test(type: Test) {
+    useJUnitPlatform() {
+        includeTags("iphone_test")
+    }
+}

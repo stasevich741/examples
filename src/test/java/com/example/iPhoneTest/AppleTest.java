@@ -3,6 +3,7 @@ package com.example.iPhoneTest;
 import com.example.core.BaseTestSelenide;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class AppleTest extends BaseTestSelenide {
@@ -13,6 +14,7 @@ public class AppleTest extends BaseTestSelenide {
 
     @Test
     @Step("проветить ссылку")
+    @Tag("iphone_test")
     public void checkHref() {
 //        MainPage mainPage = new MainPage(BASE_URL);
 //        String href = mainPage.search(EXPECTED_WORD).getHrefFromFirstArticle();
