@@ -27,7 +27,7 @@ public class BaseTestSelenide {
     }
 
     @AfterEach
-    public void tearDown() {
+    public void addAttach() {
         Attach.screenshotAs("last screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
