@@ -62,3 +62,8 @@ task iphone_test(type: Test) {
         includeTags("iphone_test")
     }
 }
+task jenkins_test(type: Test) {
+    useJUnitPlatform() {
+        includeTags("allure_test")
+    }
+}

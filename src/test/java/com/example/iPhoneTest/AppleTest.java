@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+/**
+ * проверяем, что в ссылке есть "iPhone 13"
+ */
 public class AppleTest extends BaseTestSelenide {
 
     private static final String BASE_URL = "https://appleinsider.ru/";
