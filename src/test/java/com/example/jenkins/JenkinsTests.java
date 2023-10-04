@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * тестим дженкинс
+ * testing with jenkins
  */
 
 @Tag("allure_test")
@@ -27,6 +27,13 @@ public class JenkinsTests {
     }
 
     @Test
+    @Disabled
+    @Step("skipped")
+    public void test5() {
+        assertTrue(false);
+    }
+
+    @Test
     @Step("true")
     public void test3() {
         assertTrue(true);
@@ -36,12 +43,5 @@ public class JenkinsTests {
     @Step("true")
     public void test4() {
         assertTrue(true);
-    }
-
-    @Test
-    @Disabled
-    @Step("skipped")
-    public void test5() {
-        assertTrue(false);
     }
 }
