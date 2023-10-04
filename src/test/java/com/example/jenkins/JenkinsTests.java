@@ -40,7 +40,7 @@ public class JenkinsTests {
 
     @Test
     @Disabled
-    @Step("skiped")
+    @Step("skipped")
     public void test5() {
         assertTrue(false);
     }
