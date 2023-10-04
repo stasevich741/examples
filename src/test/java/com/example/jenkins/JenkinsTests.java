@@ -1,4 +1,4 @@
-package com.example;
+package com.example.jenkins;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
