@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Test;
 /**
  * проверяем, что в ссылке есть "iPhone 13"
  */
+
+@Tag("iphone_test")
 public class AppleTest extends BaseTestSelenide {
 
     private static final String BASE_URL = "https://appleinsider.ru/";
@@ -17,7 +19,6 @@ public class AppleTest extends BaseTestSelenide {
 
     @Test
     @Step("проветить ссылку")
-    @Tag("iphone_test")
     public void checkHref() {
 //        MainPage mainPage = new MainPage(BASE_URL);
 //        String href = mainPage.search(EXPECTED_WORD).getHrefFromFirstArticle();
